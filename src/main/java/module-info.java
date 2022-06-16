@@ -9,6 +9,7 @@ module br.com.ligianedomingos.jdbcjavafx {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
+    requires java.sql;
 
     opens br.com.ligianedomingos.jdbcjavafx to javafx.fxml;
     exports br.com.ligianedomingos.jdbcjavafx;
