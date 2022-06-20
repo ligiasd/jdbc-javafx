@@ -1,6 +1,6 @@
 package br.com.ligianedomingos.jdbcjavafx.model.dao;
 
-import br.com.ligianedomingos.jdbcjavafx.model.entities.Department;
+import br.com.ligianedomingos.jdbcjavafx.Department;
 
 import java.util.List;
 

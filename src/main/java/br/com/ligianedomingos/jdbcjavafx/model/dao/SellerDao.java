@@ -1,7 +1,7 @@
 package br.com.ligianedomingos.jdbcjavafx.model.dao;
 
-import br.com.ligianedomingos.jdbcjavafx.model.entities.Department;
-import br.com.ligianedomingos.jdbcjavafx.model.entities.Seller;
+import br.com.ligianedomingos.jdbcjavafx.Department;
+import br.com.ligianedomingos.jdbcjavafx.Seller;
 
 import java.util.List;
 
@@ -12,7 +12,5 @@ public interface SellerDao {
     void deleteById(Integer id);
     Seller findById(Integer id);
     List<Seller> findAll();
-    List<Seller> findByDepartment(Department department);
-
     List<Seller> findByDepartment(Department department);
 }

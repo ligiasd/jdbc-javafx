@@ -3,13 +3,7 @@ package br.com.ligianedomingos.jdbcjavafx.model.dao.impl;
 import br.com.ligianedomingos.jdbcjavafx.db.DB;
 import br.com.ligianedomingos.jdbcjavafx.db.DbException;
 import br.com.ligianedomingos.jdbcjavafx.model.dao.DepartmentDao;
-import br.com.ligianedomingos.jdbcjavafx.model.entities.Department;
-import db.DB;
-import db.DbException;
-import model.dao.DepartmentDao;
-import model.dao.SellerDao;
-import model.entities.Department;
-import model.entities.Seller;
+import br.com.ligianedomingos.jdbcjavafx.Department;
 
 import java.sql.*;
 import java.util.ArrayList;

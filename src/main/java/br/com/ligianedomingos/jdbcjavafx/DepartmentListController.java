@@ -1,6 +1,5 @@
 package br.com.ligianedomingos.jdbcjavafx;
 
-import br.com.ligianedomingos.jdbcjavafx.model.entities.Department;
 import br.com.ligianedomingos.jdbcjavafx.model.services.DepartmentService;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

@@ -1,4 +1,4 @@
-package br.com.ligianedomingos.jdbcjavafx.model.entities;
+package br.com.ligianedomingos.jdbcjavafx;
 
 import java.io.Serializable;
 import java.util.Objects;
