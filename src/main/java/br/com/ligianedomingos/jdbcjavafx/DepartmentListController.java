@@ -1,7 +1,6 @@
 package br.com.ligianedomingos.jdbcjavafx;
 
 import br.com.ligianedomingos.jdbcjavafx.db.DbException;
-import br.com.ligianedomingos.jdbcjavafx.db.DbIntegrityException;
 import br.com.ligianedomingos.jdbcjavafx.gui.listeners.DataChangeListener;
 import br.com.ligianedomingos.jdbcjavafx.gui.util.Alerts;
 import br.com.ligianedomingos.jdbcjavafx.gui.util.Utils;
@@ -9,17 +8,16 @@ import br.com.ligianedomingos.jdbcjavafx.model.services.DepartmentService;
 import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.Pane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import javafx.event.ActionEvent;
 
 import java.io.IOException;
 import java.net.URL;
