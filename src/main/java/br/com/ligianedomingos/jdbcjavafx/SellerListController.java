@@ -4,6 +4,7 @@ import br.com.ligianedomingos.jdbcjavafx.db.DbIntegrityException;
 import br.com.ligianedomingos.jdbcjavafx.gui.listeners.DataChangeListener;
 import br.com.ligianedomingos.jdbcjavafx.gui.util.Alerts;
 import br.com.ligianedomingos.jdbcjavafx.gui.util.Utils;
+import br.com.ligianedomingos.jdbcjavafx.model.services.DepartmentService;
 import br.com.ligianedomingos.jdbcjavafx.model.services.SellerService;
 import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.collections.FXCollections;
@@ -106,7 +107,8 @@ public class SellerListController implements Initializable, DataChangeListener {
 
 			SellerFormController controller = loader.getController();
 			controller.setSeller(obj);
-			controller.setSellerService(new SellerService());
+            controller.setServices(new SellerService(), new DepartmentService());
+            controller.loadAssociatedObjects();
 			controller.subscribeDataChangeListener(this);
 			controller.updateFormData();
 
@@ -118,6 +120,7 @@ public class SellerListController implements Initializable, DataChangeListener {
 			dialogStage.initModality(Modality.WINDOW_MODAL);
 			dialogStage.showAndWait();
 		} catch (IOException e) {
+            e.printStackTrace();
 			Alerts.showAlert("IO Exception", "Error loading view", e.getMessage(), Alert.AlertType.ERROR);
 		}
     }
