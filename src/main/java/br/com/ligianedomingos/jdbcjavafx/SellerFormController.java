@@ -148,6 +148,7 @@ public class SellerFormController implements Initializable {
         Constraints.setTextFieldDouble(txtBaseSalary);
         Constraints.setTextFieldMaxLength(txtEmail, 60);
         Utils.formatDatePicker(dpBirthDate, "dd/MM/yyyy");
+        initializeComboBoxDepartment();
     }
 
     public void updateFormData() {
@@ -159,6 +160,7 @@ public class SellerFormController implements Initializable {
         txtEmail.setText(entity.getEmail());
         Locale.setDefault(Locale.US);
         txtBaseSalary.setText(String.format("%.2f", entity.getBaseSalary()));
+
         if (entity.getBirthDate() != null) {
             dpBirthDate.setValue(LocalDate.ofInstant(entity.getBirthDate().toInstant(), ZoneId.systemDefault()));
         }
